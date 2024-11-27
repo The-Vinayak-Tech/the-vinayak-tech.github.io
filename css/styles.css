@@ -1,0 +1,74 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, black, white);
+    color: #fff;
+    text-align: center;
+}
+
+/* Container Styling */
+.container {
+    max-width: 600px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Heading Styling */
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    color: #fdd835;
+}
+
+/* Paragraph Styling */
+p {
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+    line-height: 1.5;
+}
+
+/* Icon Styling */
+.icon {
+    font-size: 4rem;
+    margin: 20px 0;
+}
+
+/* Contact Link Styling */
+.contact a {
+    color: #fdd835;
+    text-decoration: none;
+    font-weight: bold;
+    border-bottom: 1px solid #fdd835;
+}
+
+.contact a:hover {
+    color: #fff;
+    border-bottom: 1px solid #fff;
+}
+.logo{
+    width: 100px; /* Adjust size as needed */
+    height: 100px; /* Keep equal to width for a perfect circle */
+    border-radius: 50%; /* Makes the image round */
+    object-fit: cover; /* Ensures the image fills the circle without distortion */
+    border: 3px solid #fff; /* Optional border */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow for better visibility */
+}
+.line{
+    font-size: 50px;
+    color: white;
+    text-shadow: 4px 4px 8px red;
+    margin: auto;
+}
