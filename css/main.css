@@ -2,7 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(200deg, #ff6a00,#ff6a00,blue,green, green);
+    background: linear-gradient(200deg,#ff6a00,dodgerblue, green);
     color: #333;
 }
 /*nav style*/
@@ -108,4 +108,30 @@ footer {
 footer a {
     color: white;
     margin: 0 10px;
+}
+
+/*back to top*/
+
+#back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 15px;
+    background-color: white;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
+
+#back-to-top:hover {
+    background-color: orangered;
+}
+.back-to-top-logo {
+    font-size: 2rem;
+    margin: 5px 0;
+}
+.back-to-top-logo:hover {
+    color: white;
 }

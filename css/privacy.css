@@ -3,29 +3,6 @@ h1, h2 {
     color: #0078d7;
 }
 
-#back-to-top {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    padding: 10px 15px;
-    background-color: #0078d7;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    display: none;
-}
 section a{
     color: #0078d7;
-}
-
-#back-to-top:hover {
-    background-color: orangered;
-}
-.back-to-top-logo {
-    font-size: 2rem;
-    margin: 5px 0;
-}
-.back-to-top-logo:hover {
-    color: white;
 }
