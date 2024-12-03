@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Percentage Calculator</title>
+    <link rel="stylesheet" href="/css/marks.css">
+</head>
+<body>
+<div class="container">
+    <h1>Percentage Calculator</h1>
+    <label for="input1">Enter a percentage for 3rd sem:</label>
+    <input type="number" id="input1" placeholder="Enter percentage" step="0.01">
+
+    <label for="input2">Enter a percentage 4th sem:</label>
+    <input type="number" id="input2" placeholder="Enter percentage" step="0.01">
+    <button onclick="calculate()">Calculate</button>
+    <div class="output" id="output">r</div>
+</div>
+
+<script>
+    function calculate() {
+        const input1 = parseFloat(document.getElementById("input1").value);
+        const input2 = parseFloat(document.getElementById("input2").value);
+
+        // Validate both inputs
+        if (isNaN(input1) || input1 < 0 || input1 > 100) {
+            document.getElementById("output").innerText = "Please enter a valid percentage for the first input!";
+            return;
+        }
+
+        if (isNaN(input2) || input2 < 0 || input2 > 100) {
+            document.getElementById("output").innerText = "Please enter a valid percentage for the second input!";
+            return;
+        }
+
+        // Function to reverse calculate and adjust
+        function adjustResult(input) {
+            let result = Math.floor(900 * (input / 100));
+            while ((result / 9).toFixed(2) !== input.toFixed(2)) {
+                result += 1;
+            }
+            return result;
+        }
+
+        // Calculate and adjust results for both inputs
+        const result1 = adjustResult(input1);
+        const result2 = adjustResult(input2);
+
+        // Calculate total result
+        const totalResult = result1 + result2;
+
+    // Display the result
+        document.getElementById("output").innerText = `Result: You got ${result1} + ${result2} =${totalResult} out of 1800`;
+    }
+
+</script>
+</body>
+</html>
